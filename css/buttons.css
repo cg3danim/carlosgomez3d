@@ -1,0 +1,115 @@
+/* CTA Button - Single Unified Component */
+.cta-button {
+    background: var(--accent-color);
+    color: white;
+    padding: 0.75rem 0.75rem 0.75rem 1.75rem;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    border: 2px solid transparent;
+    height: 56px;
+    overflow: hidden;
+}
+
+.cta-button .button-text {
+    position: relative;
+    height: 1.5em;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.cta-button .text-original,
+.cta-button .text-hover {
+    display: block;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cta-button:not(:hover) .text-original,
+.cta-button:not(:hover) .text-hover {
+    transition: transform 0.6s cubic-bezier(0.34, 1.9, 0.64, 1);
+}
+
+.cta-button .text-original {
+    transform: translateY(0%);
+    color: white;
+}
+
+.cta-button .text-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+    color: black;
+}
+
+/* Background circle animation */
+.cta-button::before {
+    content: '';
+    position: absolute;
+    right: 8px;
+    width: 40px;
+    height: 40px;
+    background: var(--bg-color);
+    border-radius: 50%;
+    transform: scale(0);
+    transform-origin: center;
+    transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 0;
+}
+
+.cta-button:not(:hover)::before {
+    transition: transform 0.6s cubic-bezier(0.2, 0, 0, 1);
+}
+
+.cta-button:hover::before {
+    transform: scale(25);
+}
+
+.cta-button .button-text,
+.cta-button .arrow-circle {
+    position: relative;
+    z-index: 1;
+}
+
+.cta-button:hover .text-original {
+    transform: translateY(-100%);
+}
+
+.cta-button:hover .text-hover {
+    transform: translateY(0%);
+}
+
+/* Arrow Circle - Unified Style */
+.arrow-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    flex-shrink: 0;
+}
+
+.cta-button:hover .arrow-circle {
+    background: var(--accent-color);
+    color: white;
+    transform: rotate(45deg);
+}
+
+/* Arrow Icon - Always use the SVG arrow */
+.arrow {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-top: 3px solid currentColor;
+    border-right: 3px solid currentColor;
+    transform: rotate(45deg);
+}

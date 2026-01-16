@@ -1,0 +1,97 @@
+/* Contact Section */
+.contact-section {
+    padding: 8rem 4rem;
+    background: white;
+    position: relative;
+}
+
+.contact-top-row {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 4rem;
+}
+
+.contact-social {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.contact-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+.contact-badge::before {
+    content: '✦';
+}
+
+.contact-section h2 {
+    font-size: clamp(4rem, 10vw, 7rem);
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.contact-section p {
+    font-size: clamp(1.2rem, 3vw, 2rem);
+    color: var(--gray-text);
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.contact-center {
+    text-align: center;
+}
+
+.back-to-top {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.back-to-top:hover {
+    opacity: 0.6;
+}
+
+.back-to-top .arrow-circle {
+    background: var(--accent-color);
+    color: white;
+}
+
+.back-to-top:hover .arrow-circle {
+    transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 4rem 2rem;
+    }
+
+    .contact-social {
+        position: static;
+        transform: none;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+
+    .back-to-top {
+        position: static;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    .contact-top-row {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: flex-start;
+    }
+}

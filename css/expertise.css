@@ -93,16 +93,17 @@
 }
 
 .expertise-item.active .expertise-content {
-    max-height: 300px;
+    max-height: 500px;
     padding-top: 2rem;
 }
 
-.expertise-description {
+.expertise-content p {
     font-size: 1.1rem;
     color: var(--gray-text);
     line-height: 1.8;
     max-width: 800px;
     margin-left: 4rem;
+    margin-bottom: 1rem;
 }
 
 @media (max-width: 768px) {

@@ -56,12 +56,27 @@ function initBackToTop() {
     }
 }
 
+// Handle smooth scroll on page load if hash is present
+function handleHashOnLoad() {
+    if (window.location.hash) {
+        const hash = window.location.hash;
+        const target = document.querySelector(hash);
+        if (target) {
+            // Delay slightly to allow for page load and animations
+            setTimeout(() => {
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 500);
+        }
+    }
+}
+
 // Initialize all scroll-related functions
 function initScrollFeatures() {
     initScrollProgress();
     initFadeInObserver();
     initSmoothScroll();
     initBackToTop();
+    handleHashOnLoad();
 }
 
 export { initScrollFeatures, initScrollProgress, initFadeInObserver, initSmoothScroll, initBackToTop };

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        // Prevent browser from jumping to anchor by temporarily removing it from the URL
+        if (window.location.hash) {
+            window.targetHash = window.location.hash;
+            history.replaceState(null, null, window.location.pathname + window.location.search);
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work - Carlos Gomez - 3D Character Animator</title>
+    
+    <!-- CSS Modules -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/social-icons.css">
+    <link rel="stylesheet" href="css/work.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html" class="logo"><img src="images/Logo_long.png" alt="Carlos Gomez"></a>
+        <div class="nav-links">
+            <a href="index.html">
+                <div class="nav-link-wrapper">
+                    <div class="text-wrapper">
+                        <span class="original">Home</span>
+                        <span class="hover-text">Home</span>
+                    </div>
+                </div>
+            </a>
+            <a href="index.html#about">
+                <div class="nav-link-wrapper">
+                    <div class="text-wrapper">
+                        <span class="original">About me</span>
+                        <span class="hover-text">About me</span>
+                    </div>
+                </div>
+            </a>
+            <a href="work.html">
+                <div class="nav-link-wrapper">
+                    <div class="text-wrapper">
+                        <span class="original">Work</span>
+                        <span class="hover-text">Work</span>
+                    </div>
+                </div>
+            </a>
+            <a href="contact.html" class="cta-button">
+                <span class="button-text">
+                    <span class="text-original">Get in touch</span>
+                    <span class="text-hover">Get in touch</span>
+                </span>
+                <span class="arrow-circle">
+                    <span class="arrow"></span>
+                </span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Selected Work Section -->
+    <section class="work-section fade-in" style="padding-top: 12rem;">
+        <div class="section-header">
+            <h2>Selected<br>Work</h2>
+            <p class="section-description">2025© — A selection of works that showcase my approach to 3D character animation, combining creativity and technical skill to create characters that connect and inspire.</p>
+        </div>
+        <div class="work-grid">
+            <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800&h=600&fit=crop" alt="Character Animation" class="work-image">
+                <div class="work-info">
+                    <div class="work-title">Fantasy Hero</div>
+                    <div class="work-category">Character Animation</div>
+                </div>
+            </div>
+            <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1535016120720-40c646be5580?w=800&h=600&fit=crop" alt="Motion Graphics" class="work-image">
+                <div class="work-info">
+                    <div class="work-title">Creature Design</div>
+                    <div class="work-category">Motion Graphics</div>
+                </div>
+            </div>
+            <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1551103782-8ab07afd45c1?w=800&h=600&fit=crop" alt="Game Animation" class="work-image">
+                <div class="work-info">
+                    <div class="work-title">Combat Sequence</div>
+                    <div class="work-category">Game Animation</div>
+                </div>
+            </div>
+            <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1614732414444-096e5f1122d5?w=800&h=600&fit=crop" alt="Character Rigging" class="work-image">
+                <div class="work-info">
+                    <div class="work-title">Character Rig</div>
+                    <div class="work-category">Technical Animation</div>
+                </div>
+            </div>
+            <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&h=600&fit=crop" alt="Film Animation" class="work-image">
+                <div class="work-info">
+                    <div class="work-title">Cinematic Sequence</div>
+                    <div class="work-category">Film Animation</div>
+                </div>
+            </div>
+            <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800&h=600&fit=crop" alt="Brand Mascot" class="work-image">
+                <div class="work-info">
+                    <div class="work-title">Brand Mascot</div>
+                    <div class="work-category">Character Design</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="contact-top-row">
+            <span class="contact-badge">Available for Projects</span>
+            
+            <div class="contact-social">
+                <div class="social-links">
+                                    <a href="#" class="social-icon">
+                    <span class="icon-wrapper">
+                        <span class="original-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M0 1.5A1.5 1.5 0 0 1 1.5 0h21A1.5 1.5 0 0 1 24 1.5v21a1.5 1.5 0 0 1-1.5 1.5h-21A1.5 1.5 0 0 1 0 22.5v-21zm8.75 11.25h-2.5v7.5h2.5v-7.5zm-1.25-3.75a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm11.25 11.25h-2.5v-3.75c0-1.5-1-1.5-1.25-1.5s-1.25 0-1.25 1.5v3.75h-2.5v-7.5h2.5v1.25c.5-.75 1.5-1.5 2.75-1.5 2 0 3.25 1.25 3.25 3.75v3.75z"/>
+                            </svg>
+                        </span>
+                        <span class="hover-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M0 1.5A1.5 1.5 0 0 1 1.5 0h21A1.5 1.5 0 0 1 24 1.5v21a1.5 1.5 0 0 1-1.5 1.5h-21A1.5 1.5 0 0 1 0 22.5v-21zm8.75 11.25h-2.5v7.5h2.5v-7.5zm-1.25-3.75a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm11.25 11.25h-2.5v-3.75c0-1.5-1-1.5-1.25-1.5s-1.25 0-1.25 1.5v3.75h-2.5v-7.5h2.5v1.25c.5-.75 1.5-1.5 2.75-1.5 2 0 3.25 1.25 3.25 3.75v3.75z"/>
+                            </svg>
+                        </span>
+                    </span>
+                </a>
+                <a href="#" class="social-icon">
+                    <span class="icon-wrapper">
+                        <span class="original-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </span>
+                        <span class="hover-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </span>
+                    </span>
+                </a>
+                <a href="#" class="social-icon artstation-icon">
+                    <span class="icon-wrapper">
+                        <span class="original-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M2 17.5L8.5 5h7l6.5 12.5"/>
+                                <path d="M12 19h7.5"/>
+                                <circle cx="12" cy="12" r="10" stroke-width="1.5"/>
+                            </svg>
+                        </span>
+                        <span class="hover-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M2 17.5L8.5 5h7l6.5 12.5"/>
+                                <path d="M12 19h7.5"/>
+                                <circle cx="12" cy="12" r="10" stroke-width="1.5"/>
+                            </svg>
+                        </span>
+                    </span>
+                </a>
+                <a href="#" class="social-icon">
+                    <span class="icon-wrapper">
+                        <span class="original-icon">Be</span>
+                        <span class="hover-icon">Be</span>
+                    </span>
+                </a>
+            </div>
+            </div>
+            
+            <a href="#" class="back-to-top">
+                Back to top
+                <span class="arrow-circle back-arrow">
+                    <span class="arrow"></span>
+                </span>
+            </a>
+        </div>
+        
+        <div class="contact-center">
+            <h2>Let's talk</h2>
+            <p>Ready to bring your next character to life?</p>
+            
+            <a href="contact.html" class="cta-button">
+                <span class="button-text">
+                    <span class="text-original">Get in touch</span>
+                    <span class="text-hover">Get in touch</span>
+                </span>
+                <span class="arrow-circle">
+                    <span class="arrow"></span>
+                </span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div>Designed by Carlos Gomez</div>
+            <div class="footer-links">
+                <a href="#">Showreel</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Modules -->
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

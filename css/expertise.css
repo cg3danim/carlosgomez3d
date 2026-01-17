@@ -1,0 +1,126 @@
+/* Expertise Section */
+.expertise-section {
+    padding: 8rem 4rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.expertise-section .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 4rem;
+    margin-bottom: 4rem;
+}
+
+.expertise-section .section-header h2 {
+    flex: 0 0 auto;
+    margin-bottom: 0;
+}
+
+.expertise-section .section-description {
+    flex: 1;
+    text-align: right;
+    max-width: 400px;
+    margin-left: auto;
+    text-align: left;
+    margin-bottom: 0;
+    padding-bottom: 0.5rem;
+}
+
+.expertise-list {
+    margin-top: 4rem;
+}
+
+.expertise-item {
+    border-bottom: 1px solid #ddd;
+    padding: 2rem 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.expertise-item:hover {
+    padding-left: 2rem;
+}
+
+.expertise-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.expertise-number {
+    font-size: 1rem;
+    color: var(--gray-text);
+    margin-right: 2rem;
+}
+
+.expertise-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    flex: 1;
+}
+
+.expertise-tag {
+    padding: 0.5rem 1.5rem;
+    background: white;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    margin-right: 2rem;
+}
+
+.expertise-toggle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--accent-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.expertise-item.active .expertise-toggle {
+    transform: rotate(45deg);
+}
+
+.expertise-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+.expertise-item.active .expertise-content {
+    max-height: 300px;
+    padding-top: 2rem;
+}
+
+.expertise-description {
+    font-size: 1.1rem;
+    color: var(--gray-text);
+    line-height: 1.8;
+    max-width: 800px;
+    margin-left: 4rem;
+}
+
+@media (max-width: 768px) {
+    .expertise-section {
+        padding: 4rem 2rem;
+    }
+
+    .expertise-title {
+        font-size: 1.5rem;
+    }
+
+    .expertise-section .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .expertise-section .section-description {
+        text-align: left;
+        margin-left: 0;
+    }
+}

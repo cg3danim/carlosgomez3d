@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script>
+        // Prevent browser from jumping to anchor by temporarily removing it from the URL
+        if (window.location.hash) {
+            window.targetHash = window.location.hash;
+            history.replaceState(null, null, window.location.pathname + window.location.search);
+        }
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Work - Carlos Gomez - 3D Character Animator</title>

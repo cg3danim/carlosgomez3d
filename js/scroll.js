@@ -58,14 +58,38 @@ function initBackToTop() {
 
 // Handle smooth scroll on page load if hash is present
 function handleHashOnLoad() {
-    if (window.location.hash) {
-        const hash = window.location.hash;
-        const target = document.querySelector(hash);
-        if (target) {
-            // Delay slightly to allow for page load and animations
-            setTimeout(() => {
-                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }, 500);
+    // Check both native hash and our custom targetHash from the head script
+    const hash = window.location.hash || window.targetHash;
+    if (hash) {
+        try {
+            const target = document.querySelector(hash);
+            if (target) {
+                // Ensure scroll restoration is manual
+                if ('scrollRestoration' in history) {
+                    history.scrollRestoration = 'manual';
+                }
+
+                const scrollDown = () => {
+                    window.scrollTo(0, 0);
+                    setTimeout(() => {
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+                        // Restore hash to URL if it was moved to targetHash
+                        if (window.targetHash) {
+                            history.replaceState(null, null, window.location.pathname + window.location.search + window.targetHash);
+                            window.targetHash = null;
+                        }
+                    }, 500);
+                };
+
+                if (document.readyState === 'complete') {
+                    scrollDown();
+                } else {
+                    window.addEventListener('load', scrollDown);
+                }
+            }
+        } catch (e) {
+            console.error("Invalid hash target", e);
         }
     }
 }

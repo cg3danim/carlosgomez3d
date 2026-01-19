@@ -14,13 +14,14 @@
 }
 
 .expertise-section .section-header h2 {
+    font-size: clamp(4rem, 10vw, 8rem);
+    line-height: 0.9;
     flex: 0 0 auto;
     margin-bottom: 0;
 }
 
 .expertise-section .section-description {
     flex: 1;
-    text-align: right;
     max-width: 400px;
     margin-left: auto;
     text-align: left;
@@ -123,5 +124,6 @@
     .expertise-section .section-description {
         text-align: left;
         margin-left: 0;
+        max-width: 100%;
     }
 }

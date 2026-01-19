@@ -5,7 +5,7 @@
     margin: 0 auto;
 }
 
-.section-header {
+.work-section .section-header {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -13,15 +13,15 @@
     margin-bottom: 4rem;
 }
 
-.section-header h2 {
-    font-size: clamp(8rem, 13vw, 16rem);
+.work-section .section-header h2 {
+    font-size: clamp(4rem, 10vw, 8rem);
     font-weight: 490;
     margin-bottom: .5rem;
     white-space: normal;
     line-height: 0.9;
 }
 
-.section-description {
+.work-section .section-description {
     font-size: 1rem;
     color: var(--gray-text);
     max-width: 400px;
@@ -101,10 +101,6 @@
         align-items: flex-start;
         gap: 2rem;
         margin-bottom: 3rem;
-    }
-
-    .work-section .section-header h2 {
-        font-size: clamp(4rem, 10vw, 8rem);
     }
 
     .work-section .section-description {

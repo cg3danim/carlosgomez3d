@@ -96,6 +96,22 @@
         padding: 4rem 2rem;
     }
 
+    .work-section .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .work-section .section-header h2 {
+        font-size: clamp(4rem, 10vw, 8rem);
+    }
+
+    .work-section .section-description {
+        margin-left: 0;
+        max-width: 100%;
+    }
+
     .work-grid {
         grid-template-columns: 1fr;
     }

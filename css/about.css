@@ -1,9 +1,4 @@
 /* About Section */
-.about-section {
-    padding: 8rem 4rem;
-    max-width: 1400px;
-    margin: 0 auto;
-}
 
 .about-content {
     display: grid;
@@ -53,10 +48,6 @@
 }
 
 @media (max-width: 768px) {
-    .about-section {
-        padding: 4rem 2rem;
-    }
-
     .about-content {
         grid-template-columns: 1fr;
         gap: 3rem;

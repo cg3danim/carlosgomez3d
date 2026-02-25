@@ -64,3 +64,56 @@ body {
     opacity: 1;
     transform: translateY(0);
 }
+
+/* Shared Section Layout */
+.section-container {
+    padding: 8rem 4rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.section-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+}
+
+.section-header h2 {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 490;
+    line-height: 1.1;
+    margin: 0;
+    flex: 0 0 auto;
+}
+
+.section-description {
+    max-width: 400px;
+    margin: 0;
+    margin-left: auto;
+    text-align: justify;
+    text-align-last: right;
+    font-size: 1.1rem;
+    color: var(--gray-text);
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .section-container {
+        padding: 4rem 2rem;
+    }
+
+    .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+
+    .section-description {
+        text-align: left;
+        margin-left: 0;
+        max-width: 100%;
+    }
+}

@@ -1,9 +1,4 @@
 /* Stats Section */
-.stats-section {
-    padding: 4rem;
-    max-width: 1400px;
-    margin: 0 auto;
-}
 
 .stats-grid {
     display: flex;
@@ -45,9 +40,6 @@
 }
 
 @media (max-width: 768px) {
-    .stats-section {
-        padding: 4rem 2rem;
-    }
 
     .stats-grid {
         flex-direction: column;

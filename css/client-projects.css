@@ -9,10 +9,10 @@
 .client-projects-section .section-header {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
     gap: 1.5rem;
     margin-bottom: 6rem;
-    text-align: right;
+    text-align: left;
 }
 
 .client-projects-section .section-header h2 {

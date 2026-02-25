@@ -4,6 +4,13 @@
     --text-color: #000000;
     --accent-color: #1a1a1a;
     --gray-text: #666666;
+    --nav-height: 130px;
+}
+
+@media (max-width: 768px) {
+    :root {
+        --nav-height: 100px;
+    }
 }
 
 /* Reset */

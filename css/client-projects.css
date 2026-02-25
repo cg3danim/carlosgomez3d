@@ -8,7 +8,8 @@
 
 .client-projects-section .section-header {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: flex-start;
     gap: 1.5rem;
     margin-bottom: 6rem;
@@ -21,6 +22,7 @@
     margin-bottom: 0;
     white-space: normal;
     line-height: 1.1;
+    flex: 0 0 auto;
 }
 
 .client-projects-section .section-description {
@@ -28,6 +30,8 @@
     font-size: 1.1rem;
     color: var(--gray-text);
     margin-top: 0;
+    text-align: right;
+    margin-left: auto;
 }
 
 .projects-display-container {
@@ -93,7 +97,7 @@
 
 /* Updated container width */
 .client-projects-section .projects-display-container {
-    width: 60%;
+    width: 72%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -112,6 +116,13 @@
     .client-projects-section .section-header {
         flex-direction: column;
         gap: 2rem;
+        align-items: flex-start;
+    }
+
+    .client-projects-section .section-description {
+        text-align: left;
+        margin-left: 0;
+        max-width: 100%;
     }
 
     .projects-display-container {

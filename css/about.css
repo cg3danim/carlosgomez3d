@@ -47,6 +47,11 @@
     font-weight: 400;
 }
 
+.about-text .social-links {
+    justify-content: flex-start;
+    margin-top: 2rem;
+}
+
 @media (max-width: 768px) {
     .about-section {
         padding: 4rem 2rem;

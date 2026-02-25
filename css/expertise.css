@@ -7,26 +7,26 @@
 
 .expertise-section .section-header {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: flex-end;
-    gap: 4rem;
+    gap: 1.5rem;
     margin-bottom: 4rem;
+    text-align: right;
 }
 
 .expertise-section .section-header h2 {
-    font-size: clamp(4rem, 10vw, 8rem);
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
     font-weight: 490;
-    margin-bottom: .5rem;
+    margin-bottom: 0;
     white-space: normal;
-    line-height: 0.9;
+    line-height: 1.1;
     flex: 0 0 auto;
 }
 
 .expertise-section .section-description {
-    flex: 1;
     max-width: 400px;
     margin-left: auto;
-    text-align: left;
+    text-align: right;
     margin-bottom: 0;
     padding-bottom: 0.5rem;
 }
@@ -120,12 +120,12 @@
 
     .expertise-section .section-header {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: flex-end;
     }
 
     .expertise-section .section-description {
-        text-align: left;
-        margin-left: 0;
+        text-align: right;
+        margin-left: auto;
         max-width: 100%;
     }
 }

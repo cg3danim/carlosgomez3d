@@ -8,25 +8,26 @@
 
 .client-projects-section .section-header {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 4rem;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1.5rem;
     margin-bottom: 6rem;
+    text-align: right;
 }
 
 .client-projects-section .section-header h2 {
-    font-size: clamp(4rem, 10vw, 8rem);
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
     font-weight: 490;
-    margin-bottom: .5rem;
+    margin-bottom: 0;
     white-space: normal;
-    line-height: 0.9;
+    line-height: 1.1;
 }
 
 .client-projects-section .section-description {
     max-width: 400px;
     font-size: 1.1rem;
     color: var(--gray-text);
-    margin-top: 1rem;
+    margin-top: 0;
 }
 
 .projects-display-container {
@@ -64,44 +65,35 @@
     transform: scale(1.1);
 }
 
-.project-legend {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.8);
+.project-legend-display {
+    width: 100%;
+    min-height: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 1.5rem;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    color: white;
+    padding: 2rem;
+    margin-top: 2rem;
 }
 
-.project-image-container:hover .project-legend {
-    opacity: 1;
-}
-
-.project-legend h3 {
-    font-size: 1.2rem;
+.project-legend-display h3 {
+    font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
     line-height: 1.2;
 }
 
-.project-legend p {
-    font-size: 0.9rem;
-    opacity: 0.8;
+.project-legend-display p {
+    font-size: 1.1rem;
+    color: var(--gray-text);
     line-height: 1.4;
+    max-width: 600px;
 }
 
-/* Sizing down the whole container by 60% (meaning it takes 40% of the section) */
+/* Updated container width */
 .client-projects-section .projects-display-container {
-    width: 40%;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
 }

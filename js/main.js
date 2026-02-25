@@ -2,7 +2,6 @@
 import { initScrollFeatures } from './scroll.js';
 import { initStatsCounter } from './stats.js';
 import { initAboutSection } from './about.js';
-import { initProjectSlider } from './client-projects.js';
 import { initMobileMenu } from './navigation.js';
 import './expertise.js'; // Just import to make toggleExpertise available globally
 import './faq.js'; // Import to make toggleFAQ available globally
@@ -12,6 +11,5 @@ document.addEventListener('DOMContentLoaded', () => {
     initScrollFeatures();
     initStatsCounter();
     initAboutSection();
-    initProjectSlider();
     initMobileMenu();
 });

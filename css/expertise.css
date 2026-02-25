@@ -15,9 +15,11 @@
 
 .expertise-section .section-header h2 {
     font-size: clamp(4rem, 10vw, 8rem);
+    font-weight: 490;
+    margin-bottom: .5rem;
+    white-space: normal;
     line-height: 0.9;
     flex: 0 0 auto;
-    margin-bottom: 0;
 }
 
 .expertise-section .section-description {

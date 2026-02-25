@@ -16,8 +16,10 @@
 
 .client-projects-section .section-header h2 {
     font-size: clamp(4rem, 10vw, 8rem);
+    font-weight: 490;
+    margin-bottom: .5rem;
+    white-space: normal;
     line-height: 0.9;
-    margin: 0;
 }
 
 .client-projects-section .section-description {
@@ -27,86 +29,87 @@
     margin-top: 1rem;
 }
 
-.projects-slider-container {
-    position: relative;
-    overflow: hidden;
-    margin-bottom: 4rem;
-}
-
-.projects-slider {
+.projects-display-container {
     display: flex;
-    transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin: 4rem auto;
+    width: 100%;
 }
 
-.project-slide {
-    flex: 0 0 100%;
-    padding-right: 2rem;
-    opacity: 0.3;
-    transition: opacity 0.6s ease;
-}
-
-.project-slide.active {
-    opacity: 1;
+.project-item {
+    flex: 1;
+    max-width: calc(20% - 1.2rem);
+    /* Size down by 60% could mean many things, but given 5 items in a row,
+       they are already much smaller. If we want them even smaller, we can use a container width. */
 }
 
 .project-image-container {
     width: 100%;
-    aspect-ratio: 16/9;
+    aspect-ratio: 2/3; /* Portrait ratio */
     overflow: hidden;
-    border-radius: 20px;
-    margin-bottom: 2rem;
+    border-radius: 15px;
+    position: relative;
+    background: #000;
 }
 
 .project-image-container img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.project-item:hover .project-image-container img {
+    transform: scale(1.1);
 }
 
 .project-legend {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: white;
+}
+
+.project-image-container:hover .project-legend {
+    opacity: 1;
 }
 
 .project-legend h3 {
-    font-size: 2rem;
+    font-size: 1.2rem;
     font-weight: 600;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
 }
 
 .project-legend p {
-    font-size: 1.1rem;
-    color: var(--gray-text);
+    font-size: 0.9rem;
+    opacity: 0.8;
+    line-height: 1.4;
 }
 
-.slider-controls {
-    display: flex;
-    gap: 1rem;
-    justify-content: flex-end;
+/* Sizing down the whole container by 60% (meaning it takes 40% of the section) */
+.client-projects-section .projects-display-container {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.slider-btn {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    border: 1px solid #ddd;
-    background: white;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-}
-
-.slider-btn:hover {
-    background: var(--accent-color);
-    color: white;
-    border-color: var(--accent-color);
-}
-
-.slider-btn svg {
-    width: 24px;
-    height: 24px;
+@media (max-width: 1024px) {
+    .client-projects-section .projects-display-container {
+        width: 100%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -119,7 +122,13 @@
         gap: 2rem;
     }
 
-    .project-slide {
-        padding-right: 0;
+    .projects-display-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .project-item {
+        flex: 0 0 calc(50% - 1rem);
+        max-width: none;
     }
 }

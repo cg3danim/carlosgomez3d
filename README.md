@@ -5,7 +5,6 @@
 ```
 portfolio-modular/
 ├── index.html                 # Main homepage
-├── work.html                  # Work/Portfolio page
 ├── contact.html               # Contact page with form & FAQ
 ├── css/                       # All CSS modules
 │   ├── styles.css            # Base styles & CSS variables
@@ -15,7 +14,7 @@ portfolio-modular/
 │   ├── hero.css              # Hero section styles
 │   ├── about.css             # About section styles
 │   ├── stats.css             # Stats section styles
-│   ├── work.css              # Work/portfolio section styles
+│   ├── client-projects.css   # Client projects grid styles
 │   ├── expertise.css         # Expertise section styles
 │   ├── contact.css           # Contact section styles
 │   ├── contact-form.css      # Contact form styles (NEW)
@@ -41,15 +40,9 @@ portfolio-modular/
 - Hero section with title and social icons
 - About section with scroll reveal animation
 - Stats counter section
-- Selected work grid (preview)
+- Client projects static grid
 - Expertise accordion
 - Contact CTA section
-- Footer
-
-### work.html - Portfolio Page
-- Full portfolio grid with 6 projects
-- Hover effects on work items
-- Contact CTA section at bottom
 - Footer
 
 ### contact.html - Contact Page

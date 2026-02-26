@@ -79,19 +79,28 @@
     .contact-social {
         position: static;
         transform: none;
+        width: 100%;
+        display: flex;
         justify-content: center;
-        margin-bottom: 2rem;
+        margin-bottom: 0;
     }
 
     .back-to-top {
         position: static;
+        width: 100%;
         justify-content: center;
-        margin-top: 2rem;
+        margin-top: 1rem;
     }
 
     .contact-top-row {
         flex-direction: column;
-        gap: 2rem;
-        align-items: flex-start;
+        gap: 1.5rem;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+
+    .contact-badge {
+        width: 100%;
+        justify-content: center;
     }
 }

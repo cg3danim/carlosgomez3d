@@ -27,6 +27,11 @@
     line-height: 1.6;
 }
 
+.contact-form-left .social-links {
+    justify-content: flex-start;
+    margin-top: 2rem;
+}
+
 .contact-info {
     margin-top: 3rem;
 }

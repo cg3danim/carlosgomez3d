@@ -79,7 +79,42 @@
 }
 
 @media (max-width: 768px) {
+    .expertise-item:hover {
+        padding-left: 0;
+    }
+
+    .expertise-header {
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .expertise-number {
+        margin-right: 1rem;
+        margin-top: 0.3rem;
+    }
+
     .expertise-title {
         font-size: 1.5rem;
+        line-height: 1.2;
+    }
+
+    .expertise-tag {
+        padding: 0.3rem 0.8rem;
+        margin-right: 0.5rem;
+        font-size: 0.75rem;
+        white-space: nowrap;
+    }
+
+    .expertise-toggle {
+        width: 32px;
+        height: 32px;
+        font-size: 1.2rem;
+        flex-shrink: 0;
+    }
+
+    .expertise-content p {
+        margin-left: 0;
+        font-size: 1rem;
+        padding-left: 2rem;
     }
 }
